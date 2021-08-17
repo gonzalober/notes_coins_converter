@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    />
+    <title>Notes Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Columns with icons</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#collection" />
+              </svg>
+            </div>
+            <h2>Featured title</h2>
+            <p>
+              Paragraph of text beneath the heading to explain the heading.
+              We'll add onto it with another sentence and probably just keep
+              going until we run out of words.
+            </p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right" />
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#people-circle" />
+              </svg>
+            </div>
+            <h2>Featured title</h2>
+            <p>
+              Paragraph of text beneath the heading to explain the heading.
+              We'll add onto it with another sentence and probably just keep
+              going until we run out of words.
+            </p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right" />
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#toggles2" />
+              </svg>
+            </div>
+            <h2>Featured title</h2>
+            <p>
+              Paragraph of text beneath the heading to explain the heading.
+              We'll add onto it with another sentence and probably just keep
+              going until we run out of words.
+            </p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h1>Try this out</h1>
+      <label for="title">Enter a number to convert </label>
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input
+          id="uservalue"
+          type="text"
+          class="form-control"
+          aria-label="Amount (to the nearest dollar)"
+        />
+        <span class="input-group-text">.00</span>
+      </div>
+      <button
+        type="button"
+        class="btn btn-warning mb-3"
+        id="button1"
+        type="button"
+        onclick="javascript: converter()"
+      >
+        Convert
+      </button>
+      <div id="results" class="text-right"></div>
+    </div>
+
+    <script src="./converter.js"></script>
+  </body>
+</html>
