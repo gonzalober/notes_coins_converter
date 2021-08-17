@@ -7,6 +7,6 @@
 
 ### Available Scripts:
 
-In the source folder you can run:
+In the root folder you can run:
 
 #### python -m SimpleHTTPServer
